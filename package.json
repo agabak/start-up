@@ -1,0 +1,24 @@
+{
+  "name": "start-up",
+  "version": "1.0.0",
+  "description": "start up project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agabak/start-up.git"
+  },
+  "author": "Agaba Kabunga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agabak/start-up/issues"
+  },
+  "homepage": "https://github.com/agabak/start-up#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "open": "0.0.5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "start-up",
+  "description": "start up project",
+  "main": "index.js",
+  "authors": [
+    "Agaba Kabunga"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/agabak/start-up",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

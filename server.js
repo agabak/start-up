@@ -1,22 +1,19 @@
-(function () {
+(function(){
     'use strict';
-
     var express = require('express'),
         path = require('path'),
         open = require('open'),
-        port = 3000,
-        app = express();
+        port = process.env.PORT || 3000,
+        app = express(),
+        server = require('http').Server(app);
     
-    app.get('/',function(req,res){
-        res.sendFile(path.join(__dirname,'./app/src/index.html'));
-    });
+    app.use(express.static(path.join(__dirname)));
     
-    
-    app.listen(port,function(err){
+    server.listen(port,function(err){
         if(err){
             console.log(err);
         }else{
             open('http://localhost:' + port);
         }
-    });
+    })
 }());
